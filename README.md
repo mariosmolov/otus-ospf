@@ -48,6 +48,11 @@ default via 10.0.2.2 dev eth0 proto dhcp metric 100
  1:  10.20.0.1                                             2.400ms reached
  1:  10.20.0.1                                             1.493ms reached
      Resume: pmtu 1500 hops 1 back 1 
+[root@R2 ~]# tracepath 10.20.0.1
+ 1?: [LOCALHOST]                                         pmtu 1500
+ 1:  10.20.0.1                                             0.631ms reached
+ 1:  10.20.0.1                                             1.499ms reached
+     Resume: pmtu 1500 hops 1 back 1
 ```
 
 Делаем линк дорогим
